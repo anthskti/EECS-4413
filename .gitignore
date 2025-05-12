@@ -1,0 +1,23 @@
+# Ignore build outputs in all subprojects
+**/bin/
+**/build/
+**/target/
+**/*.class
+**/*.log
+
+# Eclipse/IDEA/VSCode metadata
+**/.classpath
+**/.project
+**/.settings/
+**/.idea/
+**/.vscode/
+**/*.iml
+
+# OS junk
+**/.DS_Store
+**/Thumbs.db
+
+# Deployable artifacts
+**/*.war
+**/*.jar
+**/*.ear
