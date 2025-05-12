@@ -5,6 +5,9 @@
 **/*.class
 **/*.log
 
+# Local server configs
+Servers/
+
 # Eclipse/IDEA/VSCode metadata
 **/.classpath
 **/.project

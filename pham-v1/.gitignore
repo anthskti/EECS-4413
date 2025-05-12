@@ -1,0 +1,15 @@
+# Eclipse junk
+.metadata/
+.settings/
+.classpath
+.project
+
+# macOS junk
+.DS_Store
+
+# Server configs
+Servers/
+
+# Build output
+target/
+bin/
