@@ -1,5 +1,6 @@
 package firstApplication;
 
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -12,7 +13,7 @@ import java.io.PrintWriter;
 /**
  * Servlet implementation class firstApplication
  */
-@WebServlet("/firstApplication")
+@WebServlet({ "/firstApplication", "/firstApplication/*" })
 public class firstApplication extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,10 +30,44 @@ public class firstApplication extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		System.out.println("Hello, Got a GET requestion from First Application!");
-		PrintWriter resOut = response.getWriter();
-		resOut.write("Hello, 4413\n");
+		response.setContentType("text/plain");
+	    PrintWriter resOut = response.getWriter();
+
+	    // a. Return client IP and port
+	    String clientIP = request.getRemoteAddr();
+	    int clientPort = request.getRemotePort();
+	    resOut.write("Client IP: " + clientIP + "\n");
+	    resOut.write("Client Port: " + clientPort + "\n");
+
+	    // b. Return request protocol and method
+	    String protocol = request.getProtocol();
+	    String method = request.getMethod();
+	    resOut.write("Client Protocol: " + protocol + "\n");
+	    resOut.write("Client Method: " + method + "\n");
+
+	    // d. Query string and specific parameter "foo"
+	    String queryString = request.getQueryString(); // raw query string
+	    String fooValue = request.getParameter("foo"); // value of ?foo=value
+	    resOut.write("Query String: " + queryString + "\n");
+	    resOut.write("Query Param foo=" + fooValue + "\n");
+	    
+	    // c. Return request path
+	    String pathInfo = request.getPathInfo(); // for /FirstApplication/*
+	    String servletPath = request.getServletPath(); // for /FirstApplication
+	    resOut.write("Request URL: " + pathInfo + "\n");
+	    resOut.write("Request Servlet Path: " + servletPath + "\n");
+
+	    // e. Spaces in URL will show as %20 or + in query string
+	    // Try visiting: http://localhost:8080/Pham-V1/FirstApplication?foo=hello%20world
+	    
+	    // adding my content
+	    ServletContext context = this.getServletContext();
+	    String appName = context.getInitParameter("applicationName");
+	    String applicantName = context.getInitParameter("applicantName");
+	    
+	    resOut.write("Application Name: " + appName +"\n");
+	    resOut.write("Applicant Name: " + applicantName + "\n");
+	    
 		
 	}
 

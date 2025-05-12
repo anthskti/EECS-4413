@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Welcome file -->
+    <welcome-file-list>
+        <welcome-file>FirstApplication</welcome-file>
+        <welcome-file>index.html</welcome-file> 
+    </welcome-file-list>
+
+    <!-- Context Parameters -->
+    <context-param>
+        <param-name>applicationName</param-name>
+        <param-value>My First Application</param-value>
+    </context-param>
+    <context-param>
+        <param-name>applicantName</param-name>
+        <param-value>Anthony Pham</param-value>
+    </context-param>
+
+    <!-- Error Pages -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/res/my404.html</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/res/myException.html</location>
+    </error-page>
+</web-app>
