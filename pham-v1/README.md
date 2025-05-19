@@ -1,4 +1,4 @@
-# Lab 1
+# Lab 0
 
 ## Initalization
 1. Download from Apache Tomcat, then click "Servers" at the bottom and link ur server.

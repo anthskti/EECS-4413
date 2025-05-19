@@ -24,3 +24,4 @@ Servers/
 **/*.war
 **/*.jar
 **/*.ear
+/.metadata/
