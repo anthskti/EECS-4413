@@ -11,17 +11,28 @@
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-    <servlet>
+<!--     <servlet>
     	<servlet-name>CalculatorServlet</servlet-name>
     	<servlet-class>CalculatorServlet</servlet-class>
     </servlet>
+    <welcome-file-list>
+    	<welcome-file>index.html</welcome-file>
+    </welcome-file-list>
     <servlet-mapping>
     	<servlet-name>CalculatorServlet</servlet-name>
     	<url-pattern>/CalculatorServlet</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping> -->
     <context-param>
     	<param-name>defaultTaxRate</param-name>
     	<param-value>13</param-value>
+    </context-param>
+    <context-param>
+    	<param-name>defaultPrice</param-name>
+    	<param-value>0</param-value>
+    </context-param>
+    <context-param>
+    	<param-name>defaultNoItems</param-name>
+    	<param-value>0</param-value>
     </context-param>
 
 </web-app>

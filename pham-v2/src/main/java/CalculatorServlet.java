@@ -32,16 +32,32 @@ public class CalculatorServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-// parameter getting and parsing 		
-		String noItemsParam = request.getParameter("noItems");
-		String priceParam = request.getParameter("price");
-		String taxParam = request.getParameter("tax");
+// parameter getting and parsing
 		
-		int noItems = Integer.parseInt(noItemsParam);
-		double price = Double.parseDouble(priceParam);
-		double tax;
+		// Initialization
+		
+		String defaultNoItems = getServletContext().getInitParameter("defaultNoItems");
+		String defaultPrice = getServletContext().getInitParameter("defaultPrice");
+//		System.out.println("defaultPrice = " + defaultPrice);
+		int noItems = Integer.parseInt(defaultNoItems);
+		double price = Double.parseDouble(defaultPrice);
 		
 		HttpSession session = request.getSession();
+		
+		// Task A number of items and price initalization
+		
+		if (request.getParameter("noItems") != null) {
+			noItems = Integer.parseInt(request.getParameter("noItems"));
+		}
+		
+		if (request.getParameter("price") != null) {
+			price = Double.parseDouble(request.getParameter("price"));
+		}
+		
+		// Task B 
+		String taxParam = request.getParameter("tax");
+		double tax; 
+		
 		
 		if (taxParam != null && !taxParam.isEmpty()) {
 			tax = Double.parseDouble(taxParam);	
