@@ -1,6 +1,6 @@
 # Lab 1
 
-## Initalization
+## Initialization
 1. Download from Apache Tomcat, then click "Servers" at the bottom and link ur server.
 2. Then create a Dynamic Web Project. 
 3. Create a Servlet by "New" then "Other" then "Servlet", link to Tomcat.
