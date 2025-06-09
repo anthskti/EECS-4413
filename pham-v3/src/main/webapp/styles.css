@@ -68,3 +68,8 @@ legend {
 	border-radius: 0 0 5px 5px;
 	box-sizing: border-box;
 }
+.calculator-results {
+	margin: 20px auto;
+	padding: 20px;
+	width: 320px;
+}
