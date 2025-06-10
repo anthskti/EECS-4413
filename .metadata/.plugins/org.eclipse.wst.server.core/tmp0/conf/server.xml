@@ -142,7 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/StudentInformationSystem" path="/StudentInformationSystem" reloadable="true" source="org.eclipse.jst.jee.server:StudentInformationSystem"/></Host>
+      <Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/RegistrationJavaScriptAJAX" path="/RegistrationJavaScriptAJAX" reloadable="true" source="org.eclipse.jst.jee.server:RegistrationJavaScriptAJAX"/><Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/FiltersListenersJavaScriptSamples" path="/FiltersListenersJavaScriptSamples" reloadable="true" source="org.eclipse.jst.jee.server:FiltersListenersJavaScriptSamples"/></Host>
     </Engine>
   </Service>
 </Server>

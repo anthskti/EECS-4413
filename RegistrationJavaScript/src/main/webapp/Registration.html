@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Sample</title>
+</head>
+<body>
+	<section id="id1"></section>
+    <script>
+      //this code is for illustrating basic java script concepts
+      var greeting="Welcome to JS and XMLHttpRequest"
+      var course="4413";
+
+      //a constant, points to an element with the id="id1"; note that when this code is executed
+      //the element should be already created
+      const welcome = document.querySelector('#id1');
+
+      //this simply inserts the text in the element wit the id id1
+      welcome.textContent = greeting+ ', '+ course;//this is to show how you concatenate operate on variables
+     </script>
+	<fieldset>
+		<legend id="lg"> To Be Changed on Load </legend>
+		<form id="myform" action="RegistrationServlet" method="POST"
+			onsubmit="return validate()">
+			<table>
+				<tr>
+					<td><label for="fn"> Student First Name </label></td>
+					<td><input name="firstName" id="fn" type="text" /></td>
+				</tr>
+				<tr>
+					<td><label for="cn">Register For Course Number</label></td>
+					<td><input name="courseNr" id="cn" type="number"/></td>
+				</tr>
+				<tr>
+					<td><button type="submit" id="submit" name="submit"
+							value="true">Register</button></td>
+				</tr>			
+			</table>
+		</form>
+	</fieldset>
+	<section id="err" class="error"></section>
+	
+	  <script src="scripts/main.js"></script>	
+	
+</body>
+</html>
