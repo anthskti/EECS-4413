@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart Price Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="validations.js"></script>
+</head>
+	<body>
+	<header>
+		<h1>Shopping Cart Calculator</h1>
+	</header>
+		<main>
+			<form action="CalculatorServlet" method="post" id="cartForm">
+				<fieldset>
+					<legend>Enter Shopping Cart Details</legend>
+					Customer Name: 
+					<input 
+						type="text" 
+						id="name"
+						name="name"
+					>
+					<br>
+					Number of Items: 
+					<input 
+						type="text" 
+						id="noItems"
+						name="noItems"
+					>
+					<br>
+					Price per Item: 
+					<input 
+						type="text" 
+						id="price" 
+						name="price" 
+					>
+					<br>
+					Shipping Province: 
+					<input 
+						type="text" 
+						id="shipping" 
+						name="shipping" 
+					>
+					<br>
+					Tax Rate: 
+					<input 
+						type="text" 
+						id="tax" 
+						name="tax" 
+					>
+					<br>
+					<input type="submit" value="Calculate" id="Caluclate">
+				</fieldset>
+			</form>
+		</main>
+		<footer> 
+		<p>Created by Anthony Pham (ID=219523422) for E-Commerce Lab test 1</p>
+		</footer>
+	</body>
+</html>

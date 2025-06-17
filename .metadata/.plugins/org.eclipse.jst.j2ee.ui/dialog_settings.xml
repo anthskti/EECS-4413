@@ -6,14 +6,17 @@
 		<item value="Apache Tomcat v10.1"/>
 	</list>
 	<list key="J2EE_IMPORT_null">
+		<item value="/Users/anthonypham/Work/EECS-4413/StudentInformationSystem2.war"/>
+		<item value="/Users/anthonypham/Work/EECS-4413/pham-Test1.war"/>
+		<item value="/Users/anthonypham/Work/EECS-4413/pham-v3.war"/>
+		<item value="/Users/anthonypham/Work/EECS-4413/pham-v2.war"/>
 		<item value="/Users/anthonypham/Downloads/RegistrationJavaScriptAJAX.war"/>
 		<item value="/Users/anthonypham/Downloads/FiltersListenersJavaScriptSamples.war"/>
-		<item value="/Users/anthonypham/Downloads/ADemoOfSessionManagement.war"/>
-		<item value="/Users/anthonypham/Downloads/RegistrationJavaScript.war"/>
-		<item value="/Users/anthonypham/Downloads/Lab2 (1).war"/>
-		<item value="/Users/anthonypham/Work/EECS-4413/pham-v2.war"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="/Users/anthonypham/Work/EECS-4413/StudentInformationSystem2.war"/>
+		<item value="/Users/anthonypham/Work/EECS-4413/pham-Test1.war"/>
+		<item value="/Users/anthonypham/Work/EECS-4413/pham-v3.war"/>
 		<item value="/Users/anthonypham/Work/EECS-4413/pham-v2.war"/>
 	</list>
 </section>
