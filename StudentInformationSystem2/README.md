@@ -27,8 +27,7 @@ Updating:
 Create a Student:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"name":"John", "age":20,
-"major":"Computer Science"}' http://localhost:8080/StudentInformationSystem2/students
+curl -X POST -H "Content-Type: application/json" -d '{"name":"John", "age":20,"major":"Computer Science"}' http://localhost:8080/StudentInformationSystem2/students
 ```
 
 List All Students
@@ -37,7 +36,7 @@ List All Students
 curl -X GET http://localhost:8080/StudentInformationSystem2/students
 ```
 
-Get a Specific Student (gets the first index, 0 doesn't exist)
+Get a Specific Student, index through the id. so it their id is 5, do 5.
 
 ```
 curl -X GET http://localhost:8080/StudentInformationSystem2/students/1 
@@ -46,8 +45,7 @@ curl -X GET http://localhost:8080/StudentInformationSystem2/students/1
 Update a Student
 
 ```
-curl -X PUT -H "Content-Type: application/json" -d '{"name":"John Doe", "age":21,
-"major":"Software Engineering"}' http://localhost:8080/StudentInformationSystem2/students/1
+curl -X PUT -H "Content-Type: application/json" -d '{"name":"John Doe", "age":21,"major":"Software Engineering"}' http://localhost:8080/StudentInformationSystem2/students/1
 ```
 
 Delete a Student

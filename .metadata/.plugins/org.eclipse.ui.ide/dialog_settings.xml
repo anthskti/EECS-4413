@@ -15,6 +15,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/anthonypham/Work/EECS-4413/RegistrationJavaScriptAJAX"/>
+			<item value="/Users/anthonypham/Work/EECS-4413/StudentInformationSystem3.zip"/>
+			<item value="/Users/anthonypham/Work/EECS-4413/StudentInformationSystem3"/>
+			<item value="/Users/anthonypham/Work/EECS-4413/StudentInformationSystem-lab4.zip"/>
 			<item value="/Users/anthonypham/Work/EECS-4413/pham-Test1fail"/>
 			<item value="/Users/anthonypham/Work/EECS-4413/Lab2 (1)"/>
 			<item value="/Users/anthonypham/Work/EECS-4413/StudentInformationSystem.zip"/>
@@ -22,7 +26,7 @@
 			<item value="/Users/anthonypham/Work/EECS-4413/pham-v1"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="442"/>
+			<item key="DIALOG_X_ORIGIN" value="441"/>
 			<item key="DIALOG_Y_ORIGIN" value="99"/>
 			<item key="DIALOG_WIDTH" value="880"/>
 			<item key="DIALOG_HEIGHT" value="627"/>

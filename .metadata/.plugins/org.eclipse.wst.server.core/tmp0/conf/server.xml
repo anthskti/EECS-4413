@@ -142,12 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/StudentInformationSystem-lab6" path="/StudentInformationSystem" privileged="true" reloadable="true" source="org.eclipse.jst.jee.server:StudentInformationSystem-lab6"> 
-	<WatchedResource>WEB-INF/web.xml</WatchedResource> 
-	<Manager pathname=""/> 
-	<Resource driverClassName="org.sqlite.JDBC" factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" name="jdbc/EECS" type="javax.sql.DataSource" url="jdbc:sqlite:/Users/Yar/Documents/School/EECS4413/students.db"/> 
-	<ResourceLink global="jdbc/EECS" name="jdbc/EECS" type="javax.sql.DataSource"/> 
-</Context><Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/StudentInformationSystem2" path="/StudentInformationSystem2" privileged="true" reloadable="true" source="org.eclipse.jst.jee.server:StudentInformationSystem2">
+      <Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/anthonypham/Work/EECS-4413/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/StudentInformationSystem3" path="/StudentInformationSystem3" privileged="true" reloadable="true" source="org.eclipse.jst.jee.server:StudentInformationSystem3">
 	<WatchedResource>WEB-INF/web.xml</WatchedResource>
 	<Manager pathname=""/>
 	<Resource driverClassName="org.sqlite.JDBC" factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" name="jdbc/EECS" type="javax.sql.DataSource" url="jdbc:sqlite:/Users/anthonypham/Work/EECS-4413/students.db"/>  <!-- My Directory -->
